@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [[ "$(find /var/spool -maxdepth 0 -empty)" == "/var/spool" ]]; then
+	pushd /var/spool &> /dev/null
+	tar xzf ../spool.tar.gz
+    popd &> /dev/null
+fi

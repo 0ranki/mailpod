@@ -1,0 +1,9 @@
+[Unit]
+Description=Mailpod entrypoint
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/mailpod-entrypoint
+
+[Install]
+WantedBy=default.target
